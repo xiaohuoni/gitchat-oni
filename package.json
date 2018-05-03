@@ -1,0 +1,41 @@
+{
+  "name": "gitchat-oni",
+  "version": "1.0.2",
+  "description": "这里写的是简介，小虎Oni的chat，编写一个简单的cli工具",
+  "bin": {
+    "onitest": "./bin/gitchat-oni.js"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
+  "keywords": ["gitchat", "小虎Oni", "xiaohuoni"],
+  "author": "xiaohuoni",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "path": "^0.12.7",
+    "through2": "^2.0.3",
+    "vinyl-fs": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "~6.5.0",
+    "babel-runtime": "^6.9.2"
+},
+  "babel": {
+    "presets": ["es2015", "stage-0"],
+    "plugins": ["add-module-exports", "transform-runtime"]
+  },
+  "files": [
+    "lib",
+    "template",
+    "bin"
+],
+"repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuoni/gitchat-oni"
+}
+}
